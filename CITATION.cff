@@ -7,6 +7,13 @@ authors:
 version: 1.0.0
 date-released: "2026-08-17"
 url: "https://github.com/andrehartrepo/challenge-crc-exercise-cua"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21978175"
+    description: "Concept DOI for all versions"
+  - type: doi
+    value: "10.5281/zenodo.21978176"
+    description: "DOI of version v1.0.0"
 license: MIT
 keywords:
   - cost-utility analysis

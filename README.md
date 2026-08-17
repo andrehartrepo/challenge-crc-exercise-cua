@@ -1,5 +1,7 @@
 # Cost-Utility Analysis of a Structured Exercise Programme in Colon Cancer
 
+[![DOI](https://zenodo.org/badge/1336968300.svg)](https://doi.org/10.5281/zenodo.21978175)
+
 This repository holds the R model behind a master's thesis in health economics: a decision-analytic cost-utility analysis comparing a structured exercise programme with standard care for colon cancer survivors after adjuvant chemotherapy, in the Norwegian setting.
 
 ## What this repository is
@@ -131,7 +133,7 @@ That CSV ships with the repository because `R/09-export-latex-commands.R` reads 
 - Eu-HEM, European Master in Health Economics and Management
 - Programme cohort 2024-2026
 
-Please cite the thesis when using this model or its code.
+Please cite the thesis when using this model or its code. The code itself is archived on Zenodo: DOI 10.5281/zenodo.21978175 refers to all versions, and each release carries its own version DOI (v1.0.0 is 10.5281/zenodo.21978176).
 
 ## License
 
