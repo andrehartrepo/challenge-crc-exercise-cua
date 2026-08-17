@@ -20,7 +20,7 @@ Parameter values are annotated inline with `# SOURCE:` comments naming their ori
 - Time horizon: 40 years
 - Cycle length: one month (1/12 year), 480 cycles
 - Discounting: the stepped 4/3/2 percent schedule of Rundskriv R-109 as the base case, with a flat 4 percent schedule as sensitivity analysis
-- Currency: NOK
+- Currency: 2024 NOK
 - Probabilistic analysis: 10,000 draws in the base-case PSA, and 500 draws per scenario in the probabilistic one-way analysis across 8 parameters at a low and a high bound
 
 ## Repository layout
@@ -135,10 +135,10 @@ That CSV ships with the repository because `R/09-export-latex-commands.R` reads 
 
 This code accompanies the master's thesis: Álcega Hartmann, A. (2026). *Cost-Utility and Value of Information Analysis of Structured Exercise After Adjuvant Chemotherapy for Colon Cancer: A Partitioned Survival Model from the Norwegian Extended Healthcare Perspective.* European Master in Health Economics and Management (Eu-HEM), University of Oslo, Erasmus University Rotterdam and University of Bologna. Oslo, August 2026.
 
-Please cite the thesis when using this model or its code. The code itself is archived on Zenodo: DOI 10.5281/zenodo.21978175 refers to all versions, and each release carries its own version DOI (v1.0.0 is 10.5281/zenodo.21978176).
+Please cite the thesis when using this model or its code. The code itself is archived on Zenodo: DOI 10.5281/zenodo.21978175 refers to all versions and always resolves to the newest one, which is the DOI to cite. Each release also carries its own version DOI (v1.0.0 is 10.5281/zenodo.21978176, v1.0.1 is 10.5281/zenodo.21978187).
 
 ## License
 
-The code is released under the [MIT License](LICENSE). Documentation, text, and generated tables are released under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+The code is released under the [MIT License](LICENSE). Documentation, text, and generated tables are released under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-CC-BY-4.0.md).
 
 You are free to share and adapt this material with appropriate attribution.

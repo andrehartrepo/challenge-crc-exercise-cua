@@ -4,7 +4,7 @@ title: "R code for a cost-utility analysis of a structured exercise programme in
 authors:
   - family-names: "Álcega Hartmann"
     given-names: "André"
-version: 1.0.0
+version: 1.0.1
 date-released: "2026-08-17"
 url: "https://github.com/andrehartrepo/challenge-crc-exercise-cua"
 identifiers:
@@ -14,7 +14,12 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.21978176"
     description: "DOI of version v1.0.0"
-license: MIT
+  - type: doi
+    value: "10.5281/zenodo.21978187"
+    description: "DOI of version v1.0.1"
+license:
+  - MIT
+  - CC-BY-4.0
 preferred-citation:
   type: thesis
   authors:
