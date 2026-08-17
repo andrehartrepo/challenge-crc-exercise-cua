@@ -1,0 +1,27 @@
+\begin{table}[H]
+\centering
+\caption{\label{tab:table26}Parametric Distribution Selection by AIC and BIC. Six candidate distributions fitted to the standard-care arm for DFS and OS endpoints. Lowest BIC: Generalised gamma for DFS, Log-normal for OS. Log-normal applied to both endpoints on grounds of parsimony, biological plausibility, and visual fit to the Kaplan-Meier curves.}
+\centering
+\fontsize{9}{11}\selectfont
+\makebox[\textwidth][c]{%
+\begin{threeparttable}
+\begin{tabular}[t]{lrrrrrr}
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Distribution}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{DFS AIC}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{DFS BIC}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{DFS rank}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{OS AIC}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{OS BIC}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{OS rank}}}\\
+\midrule
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Exponential}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1,022.7}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1,026.8}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{6}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{620.2}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{624.3}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{6}}\\
+\textcolor[HTML]{2D3748}{Weibull} & \textcolor[HTML]{2D3748}{1,000.0} & \textcolor[HTML]{2D3748}{1,008.2} & \textcolor[HTML]{2D3748}{5} & \textcolor[HTML]{2D3748}{608.4} & \textcolor[HTML]{2D3748}{616.6} & \textcolor[HTML]{2D3748}{4}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Log-normal}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{986.6}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{994.8}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{2}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{603.8}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{612.0}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1}}\\
+\textcolor[HTML]{2D3748}{Log-logistic} & \textcolor[HTML]{2D3748}{996.0} & \textcolor[HTML]{2D3748}{1,004.2} & \textcolor[HTML]{2D3748}{4} & \textcolor[HTML]{2D3748}{607.5} & \textcolor[HTML]{2D3748}{615.7} & \textcolor[HTML]{2D3748}{2}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Gompertz}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{993.5}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1,001.7}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{3}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{614.8}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{623.0}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{5}}\\
+\textcolor[HTML]{2D3748}{Generalised gamma} & \textcolor[HTML]{2D3748}{980.4} & \textcolor[HTML]{2D3748}{992.7} & \textcolor[HTML]{2D3748}{1} & \textcolor[HTML]{2D3748}{603.6} & \textcolor[HTML]{2D3748}{615.9} & \textcolor[HTML]{2D3748}{3}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item AIC = Akaike information criterion; BIC = Bayesian information criterion; DFS = disease-free survival; OS = overall survival.
+\item Distributions fitted using maximum likelihood estimation via the flexsurv R package. BIC preferred over AIC as the primary selection criterion (penalises complexity more heavily). Differences within 2 BIC points are considered negligible evidence of a superior fit.
+\item Source: Parametric survival model fitting (R code, supplementary material); distribution selection following NICE DSU Technical Support Document 14 \parencite{latimer2013}.
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}

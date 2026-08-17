@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\caption{\label{tab:table10}Subgroup sensitivity analysis.}
+\centering
+\fontsize{9}{11}\selectfont
+\makebox[\textwidth][c]{%
+\begin{threeparttable}
+\begin{tabular}[t]{lrrr}
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Subgroup}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Inc. Costs (NOK)}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Inc. QALYs}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{ICER (NOK/QALY)}}}\\
+\midrule
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Stage II only: disease-free utility 0.82 (Mulder 2022 Table 3); cost inputs remain at their base values}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{32,764}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.9102}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{35,995}}\\
+\textcolor[HTML]{2D3748}{Stage III only: disease-free utility 0.84 (Mulder 2022 Table 3); cost inputs remain at their base values} & \textcolor[HTML]{2D3748}{32,764} & \textcolor[HTML]{2D3748}{0.9341} & \textcolor[HTML]{2D3748}{35,076}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Younger cohort age 50: SSB qx from 50, Garratt norms from 50-59}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{60,586}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1.3561}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{44,678}}\\
+\textcolor[HTML]{2D3748}{Older cohort age 74: SSB qx and age norms from 74} & \textcolor[HTML]{2D3748}{−63,257} & \textcolor[HTML]{2D3748}{0.0493} & \textcolor[HTML]{2D3748}{−1,282,906}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Male only: SSB male qx, Garratt 2022 male norms}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{26,456}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.8420}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{31,419}}\\
+\textcolor[HTML]{2D3748}{Female only: SSB female qx, Garratt 2022 female norms} & \textcolor[HTML]{2D3748}{37,314} & \textcolor[HTML]{2D3748}{0.9639} & \textcolor[HTML]{2D3748}{38,709}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Full adherence: 60 sessions (20/yr x 3yr), max cost}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{81,683}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.9102}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{89,739}}\\
+\textcolor[HTML]{2D3748}{Low adherence: 38\% rate (Phase 3 min), 23 sessions, reduced cost} & \textcolor[HTML]{2D3748}{23,131} & \textcolor[HTML]{2D3748}{0.9102} & \textcolor[HTML]{2D3748}{25,412}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{England EQ-5D-5L value set: disease-free utility 0.85 (Mulder 2022 sensitivity analysis)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{32,764}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.9460}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{34,633}}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item ICER = incremental cost-effectiveness ratio; QALY = quality-adjusted life year; NOK = Norwegian kroner.
+\item Subgroups defined per thesis research question 3. '-' = scenario did not execute.
+\item Source: Structural sensitivity analysis subgroup dimensions A-E (R code, supplementary material).
+\item ICERs are computed from unrounded incremental costs and QALYs; the rounded operands shown may not reproduce the ratio exactly.
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}

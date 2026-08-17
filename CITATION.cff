@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite both the thesis and this repository."
+title: "R code for a cost-utility analysis of a structured exercise programme in colon cancer (CHALLENGE trial)"
+authors:
+  - family-names: "Álcega Hartmann"
+    given-names: "André"
+version: 1.0.0
+date-released: "2026-08-17"
+url: "https://github.com/andrehartrepo/challenge-crc-exercise-cua"
+license: MIT
+keywords:
+  - cost-utility analysis
+  - health economic model
+  - decision-analytic model
+  - partitioned survival model
+  - colon cancer
+  - exercise oncology
+  - Norway

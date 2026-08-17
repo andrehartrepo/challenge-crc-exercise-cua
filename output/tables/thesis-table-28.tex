@@ -1,0 +1,36 @@
+\begin{table}[H]
+\centering
+\caption{\label{tab:table28}Summary of Model Calibration and Development.}
+\centering
+\fontsize{9}{10.5}\selectfont
+\makebox[\textwidth][c]{%
+\begin{threeparttable}
+\begin{tabular}[t]{>{\raggedright\arraybackslash}p{1.2cm}>{\raggedright\arraybackslash}p{7.0cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{2.0cm}>{\raggedright\arraybackslash}p{1.5cm}}
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Version}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Key Change}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{ICER (NOK/QALY)}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{PA Mean}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{P(CE) at prevailing threshold}}}\\
+\midrule
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Initial model structure and parameters}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{174,176}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{175,700}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{95.1\%}}\\
+\textcolor[HTML]{2D3748}{2} & \textcolor[HTML]{2D3748}{Corrected 5 parameter input errors} & \textcolor[HTML]{2D3748}{94,767} & \textcolor[HTML]{2D3748}{92,117} & \textcolor[HTML]{2D3748}{97.5\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{3}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Survival calibration + correlated HRs}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{−19,834 (dominant)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{−32,238}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{96.6\%}}\\
+\textcolor[HTML]{2D3748}{4} & \textcolor[HTML]{2D3748}{Utility values corrected to match published source} & \textcolor[HTML]{2D3748}{−20,391 (dominant)} & \textcolor[HTML]{2D3748}{−30,222} & \textcolor[HTML]{2D3748}{96.4\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{5}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Exact SSB life table qx values}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{57,270}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{51,193}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{96.2\%}}\\
+\textcolor[HTML]{2D3748}{6} & \textcolor[HTML]{2D3748}{Log-normal survival distributions, EQ-5D utilities, costs from published studies, 10,000 PA iterations} & \textcolor[HTML]{2D3748}{119,488} & \textcolor[HTML]{2D3748}{79,606} & \textcolor[HTML]{2D3748}{95.7\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{7}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Corrected utility SE calculation (was using SD instead of SE). Drug discount SA added. 9 subgroup scenarios added.}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{119,488}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{78,345}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{98.1\%}}\\
+\textcolor[HTML]{2D3748}{8} & \textcolor[HTML]{2D3748}{Standardised results table formatting.} & \textcolor[HTML]{2D3748}{119,488} & \textcolor[HTML]{2D3748}{78,345} & \textcolor[HTML]{2D3748}{98.1\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{9}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Added CEAF and decision uncertainty analysis (Fenwick et al. 2001).}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{119,488}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{78,345}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{98.1\%}}\\
+\textcolor[HTML]{2D3748}{10} & \textcolor[HTML]{2D3748}{Completed CHEERS 2022 reporting checklist.} & \textcolor[HTML]{2D3748}{119,488} & \textcolor[HTML]{2D3748}{78,345} & \textcolor[HTML]{2D3748}{98.1\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{11}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Extended perspective with disaggregated costs (Helfo A3, travel, patient time).}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{106,959}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{65,546}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{98.4\%}}\\
+\textcolor[HTML]{2D3748}{12} & \textcolor[HTML]{2D3748}{Added perspective comparison analysis.} & \textcolor[HTML]{2D3748}{106,959} & \textcolor[HTML]{2D3748}{65,546} & \textcolor[HTML]{2D3748}{98.4\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{13}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Parameter inputs re-checked against original papers. Structural SA updated to current parameters (previously used v7 values). Age 74 subgroup ICER: 468,924 (cost-effective; superseded, see note).}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{106,959}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{65,546}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{98.4\%}}\\
+\textcolor[HTML]{2D3748}{Current} & \textcolor[HTML]{2D3748}{Reference sampling uses endpoint-specific independence; positive complete-row copula dependence is a separate specification sensitivity. Surveillance, exercise-programme, and progressed-disease costs and progressed-state utility uncertainty use corrected component ownership. The programme cost now also prices the trial's behavioural-support contacts, which were previously unpriced.} & \textcolor[HTML]{2D3748}{35,995} & \textcolor[HTML]{2D3748}{33,089} & \textcolor[HTML]{2D3748}{99.3\%}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item ICER = incremental cost-effectiveness ratio; NOK = Norwegian kroner; QALY = quality-adjusted life year; PA = probabilistic analysis; CE = cost-effective; HR = hazard ratio; SE = standard error; SD = standard deviation; SA = sensitivity analysis; SSB = Statistisk sentralbyrå; CEAF = cost-effectiveness acceptability frontier; CHEERS = Consolidated Health Economic Evaluation Reporting Standards; EQ-5D = EuroQol five-dimension questionnaire; Helfo = Helseøkonomiforvaltningen (Norwegian Health Economics Administration).
+\item Costs are in 2024 NOK, except the July-2025 Helfo tariffs, the 2026 Pasientreiser mileage rate, and values composed from them, at face value.
+\item Dominant = lower cost and higher QALYs. P(CE) is evaluated at the threshold applying to each version: historical rows against the then-applicable 495,000 NOK/QALY reference, the current version at 385,000 NOK/QALY (severity Category 2). Each row's printed results belong to its own version and are superseded by the current version.
+\item Source: R model output (current version); model development records.
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}

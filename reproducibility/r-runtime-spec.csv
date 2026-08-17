@@ -1,0 +1,2 @@
+schema_version,r_version,platform,rng_kind,normal_kind,sample_kind,blas_path,blas_sha256,lapack_path,lapack_sha256,repository_option
+1,R version 4.5.1 (2025-06-13),aarch64-apple-darwin20,Mersenne-Twister,Inversion,Rejection,/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRblas.0.dylib,8e41bfed8ab2a5cd7ca2335790a46569f49ce3bd10b1d18dbdfa92176c803836,/Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRlapack.dylib,f5f9cf7041a4cf34287f93b4aba6e64d28bbb22b09fe353ea7fcd289b110dec5,@CRAN@

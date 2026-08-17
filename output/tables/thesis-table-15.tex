@@ -1,0 +1,51 @@
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item HR = hazard ratio; DFS = disease-free survival; OS = overall survival; SE = standard error; SD = standard deviation; QALY = quality-adjusted life year; NOK = Norwegian kroner; PA = probabilistic analysis; CPI = consumer price index; CHALLENGE = Colon Health and Lifelong Exercise Change (trial); DF = disease-free; PD = progressed disease; DMP = Norwegian Medical Products Agency; DRG = diagnosis-related group; Helfo = Helseøkonomiforvaltningen (Norwegian Health Economics Administration); HRQoL = health-related quality of life; ISF = Innsatsstyrt finansiering (activity-based financing); SSB = Statistisk sentralbyrå.
+\item Costs are in 2024 NOK, except the July-2025 Helfo tariffs, the 2026 Pasientreiser mileage rate, and values composed from them, at face value.
+\item Source: Model input parameters (R code, supplementary material). CHEERS 2022 Item 14.
+\end{TableNotes}
+\begin{longtable}[t]{lr>{\raggedright\arraybackslash}p{3.7cm}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}p{5.2cm}}
+\caption{\label{tab:table15}Model Input Parameters. 21 parameters across clinical efficacy and model settings, HRQoL utility weights, and cost components. All values implemented in the R model (supplementary material). Extended healthcare perspective. Effective discount rate 4\% per Rundskriv R-109 stepped schedule.}\\
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Parameter}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Base Case}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{SE/SD}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{PA Distribution}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Source}}}\\
+\midrule
+\endfirsthead
+\caption[]{Model Input Parameters. \textit{(continued)}}\\
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Parameter}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Base Case}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{SE/SD}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{PA Distribution}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Source}}}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\insertTableNotes
+\endlastfoot
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{CLINICAL EFFICACY AND MODEL SETTINGS}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}}\\
+\textcolor[HTML]{2D3748}{HR DFS (exercise vs control)} & \textcolor[HTML]{2D3748}{0.72} & \textcolor[HTML]{2D3748}{SE=0.137} & \textcolor[HTML]{2D3748}{Lognormal} & \textcolor[HTML]{2D3748}{Courneya et al., 2025}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{HR OS (exercise vs control)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.63}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{SE=0.2}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Lognormal}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Courneya et al., 2025}}\\
+\textcolor[HTML]{2D3748}{Cross-endpoint reference dependence (rho)} & \textcolor[HTML]{2D3748}{0} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{Fixed assumption} & \textcolor[HTML]{2D3748}{Assumption: joint DFS-OS covariance not identifiable from published trial data; specification sensitivity in Appendix Table~\ref{tab:table30}}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Starting age}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{61 years}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{-}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Fixed}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{CHALLENGE trial median}}\\
+\textcolor[HTML]{2D3748}{Time horizon} & \textcolor[HTML]{2D3748}{40 years} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{Fixed} & \textcolor[HTML]{2D3748}{DMP guidelines}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Cycle length}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1 month}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{-}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Fixed}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Standard practice}}\\
+\textcolor[HTML]{2D3748}{HRQoL UTILITY WEIGHTS} & \textcolor[HTML]{2D3748}{} & \textcolor[HTML]{2D3748}{} & \textcolor[HTML]{2D3748}{} & \textcolor[HTML]{2D3748}{}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Disease-free (u\_DF)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.82}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{SE=0.0163}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Beta}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Mulder et al., 2022}}\\
+\textcolor[HTML]{2D3748}{Progressed disease (u\_PD)} & \textcolor[HTML]{2D3748}{0.743} & \textcolor[HTML]{2D3748}{SE=0.0305} & \textcolor[HTML]{2D3748}{Beta} & \textcolor[HTML]{2D3748}{Färkkilä et al., 2014 (mapped to 5L via Torkilseng et al., 2025; unrounded mapped mean 0.742726)}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Dead}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{-}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Fixed}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{By definition}}\\
+\textcolor[HTML]{2D3748}{Exercise HRQoL decrement} & \textcolor[HTML]{2D3748}{0} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{Fixed (not sampled)} & \textcolor[HTML]{2D3748}{No evidence of disutility}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{COST PARAMETERS}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}}\\
+\textcolor[HTML]{2D3748}{Exercise session fee (Helfo A3, DMP-adjusted)} & \textcolor[HTML]{2D3748}{1,266} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{(via total)} & \textcolor[HTML]{2D3748}{2 x (Helfo A3a + 4xA3b); DMP v1.6 1.2 Forutsetninger row 27}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Initial assessment (Helfo A1d)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{516}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{SE=103}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Gamma}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Helfo A1d}}\\
+\textcolor[HTML]{2D3748}{Patient travel per session} & \textcolor[HTML]{2D3748}{58.24} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{(via total)} & \textcolor[HTML]{2D3748}{Pasientreiser 3.20 NOK/km (pasientreiseforskriften Section 21)}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Patient time, exercise}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{328}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{-}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{(via total)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DMP v1.6 Fritid rate}}\\
+\textcolor[HTML]{2D3748}{Patient time, travel} & \textcolor[HTML]{2D3748}{approx 175} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{(via total)} & \textcolor[HTML]{2D3748}{DMP v1.6 Fritid rate}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Session total (extended)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{approx 1,827}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{composite}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Gamma}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Composite}}\\
+\textcolor[HTML]{2D3748}{Session total (healthcare-services-only perspective)} & \textcolor[HTML]{2D3748}{1,266} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{-} & \textcolor[HTML]{2D3748}{DMP-adjusted Helfo A3 only}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Behavioural-support contact (A3a + 1 x A3b, 30 min)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{327}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{-}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{(via total)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Helfo A3a + 1 x A3b; lower bound of the stated 30-60 min per topic}}\\
+\textcolor[HTML]{2D3748}{Shared surveillance annual (years 0-5)} & \textcolor[HTML]{2D3748}{5,802} & \textcolor[HTML]{2D3748}{SE=1,160} & \textcolor[HTML]{2D3748}{Gamma} & \textcolor[HTML]{2D3748}{Helsedir + ISF DRG 906A + DMP v1.6}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Shared progressed-disease annual}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{198,319}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{SE=39,664}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Gamma}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Joranger 2020 OR1 T1; SSB CPI to 2024}}\\
+\textcolor[HTML]{2D3748}{End-of-life (one-time)} & \textcolor[HTML]{2D3748}{164,687} & \textcolor[HTML]{2D3748}{SE=1,409} & \textcolor[HTML]{2D3748}{Gamma} & \textcolor[HTML]{2D3748}{Bjørnelv 2020 CPI-adj}\\*
+\end{longtable}
+\end{ThreePartTable}
+\endgroup{}

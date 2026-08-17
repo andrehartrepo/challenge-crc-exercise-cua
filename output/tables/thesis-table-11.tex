@@ -1,0 +1,27 @@
+\begin{table}[H]
+\centering
+\caption{\label{tab:table11}Internal validation of PSM trace across 2 arms (Standard Care and Exercise): per-cycle verdicts.}
+\centering
+\fontsize{9}{11}\selectfont
+\makebox[\textwidth][c]{%
+\begin{threeparttable}
+\begin{tabular}[t]{lr}
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Check}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Verdict}}}\\
+\midrule
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS probability non-increasing (Standard Care)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Satisfied}}\\
+\textcolor[HTML]{2D3748}{DFS probability non-increasing (Exercise)} & \textcolor[HTML]{2D3748}{Satisfied}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Death probability non-decreasing (Standard Care)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Satisfied}}\\
+\textcolor[HTML]{2D3748}{Death probability non-decreasing (Exercise)} & \textcolor[HTML]{2D3748}{Satisfied}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{State occupancy sums to 1}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Satisfied}}\\
+\textcolor[HTML]{2D3748}{Progressed-disease probability non-negative} & \textcolor[HTML]{2D3748}{Satisfied}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item DFS = disease-free survival; PSM = partitioned survival model.
+\item Each verdict evaluates its stated condition at every model cycle and reduces the sequence to a single Satisfied/Violated result within a floating-point noise tolerance of 1e-10 per cycle.
+\item Source: PSM trace validation (R code, supplementary material).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}

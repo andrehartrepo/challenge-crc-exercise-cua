@@ -1,0 +1,14 @@
+version,key_change,icer,psa_mean,pce
+1,Initial model structure and parameters,174176,175700,95.1%
+2,Corrected 5 parameter input errors,94767,92117,97.5%
+3,Survival calibration + correlated HRs,-19834 (dominant),-32238,96.6%
+4,Utility values corrected to match published source,-20391 (dominant),-30222,96.4%
+5,Exact SSB life table qx values,57270,51193,96.2%
+6,"Log-normal survival distributions, EQ-5D utilities, costs from published studies, 10,000 PA iterations",119488,79606,95.7%
+7,"Corrected utility SE calculation (was using SD instead of SE). Drug discount SA added. 9 subgroup scenarios added.",119488,78345,98.1%
+8,Standardised results table formatting.,119488,78345,98.1%
+9,Added CEAF and decision uncertainty analysis (Fenwick et al. 2001).,119488,78345,98.1%
+10,Completed CHEERS 2022 reporting checklist.,119488,78345,98.1%
+11,"Extended perspective with disaggregated costs (Helfo A3, travel, patient time).",106959,65546,98.4%
+12,Added perspective comparison analysis.,106959,65546,98.4%
+13,"Parameter inputs re-checked against original papers. Structural SA updated to current parameters (previously used v7 values). Age 74 subgroup ICER: 468,924 (cost-effective; superseded, see note).",106959,65546,98.4%

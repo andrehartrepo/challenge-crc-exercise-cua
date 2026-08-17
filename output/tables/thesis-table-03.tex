@@ -1,0 +1,33 @@
+\begin{table}[H]
+\centering
+\caption[PA convergence diagnostics]{\label{tab:table03}PA Convergence Diagnostics. Primary method: incremental net monetary benefit (INMB) confidence interval. The INMB 95\% CI excluded zero from n=100 iterations onward. Secondary check: cumulative mean ICER difference exceeding the 1\% stability threshold; the primary INMB criterion governs. Cost-effectiveness threshold: NOK 385,000/QALY. Extended healthcare perspective; 4\% discount rate (Rundskriv R-109).}
+\centering
+\fontsize{9}{11}\selectfont
+\makebox[\textwidth][c]{%
+\begin{threeparttable}
+\begin{tabular}[t]{lr}
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Metric}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Value}}}\\
+\midrule
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Panel A: INMB Confidence Interval Method (Primary)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}}\\
+\textcolor[HTML]{2D3748}{INMB at n=   100} & \textcolor[HTML]{2D3748}{Mean: 302,046 (95\% CI: 279,684 to 324,409) *}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{INMB at n=   500}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Mean: 303,762 (95\% CI: 293,998 to 313,527) *}}\\
+\textcolor[HTML]{2D3748}{INMB at n= 1,000} & \textcolor[HTML]{2D3748}{Mean: 307,470 (95\% CI: 300,224 to 314,716) *}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{INMB at n= 2,000}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Mean: 307,256 (95\% CI: 302,200 to 312,311) *}}\\
+\textcolor[HTML]{2D3748}{INMB at n= 5,000} & \textcolor[HTML]{2D3748}{Mean: 308,642 (95\% CI: 305,457 to 311,827) *}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{INMB at n=10,000}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Mean: 310,812 (95\% CI: 308,540 to 313,084) *}}\\
+\textcolor[HTML]{2D3748}{Panel B: ICER Stability Check (Secondary)} & \textcolor[HTML]{2D3748}{}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{ICER at 1,000 iterations (NOK/QALY)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{31,719}}\\
+\textcolor[HTML]{2D3748}{ICER at 10,000 iterations (NOK/QALY)} & \textcolor[HTML]{2D3748}{33,089}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Percentage difference}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{4.14\%}}\\
+\textcolor[HTML]{2D3748}{Within 1\% threshold} & \textcolor[HTML]{2D3748}{No}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item Costs are in 2024 NOK, except the July-2025 Helfo tariffs, the 2026 Pasientreiser mileage rate, and values composed from them, at face value.
+\item * = 95\% CI excludes zero (convergence confirmed). ICER = incremental cost-effectiveness ratio; NOK = Norwegian kroner; PA = probabilistic analysis; QALY = quality-adjusted life year; CI = confidence interval. INMB = incremental net monetary benefit = inc. QALYs x threshold - inc. costs.
+\item Source: PA convergence diagnostics (R code, supplementary material). Hatswell et al. (2018), PharmacoEconomics 36(12):1421-1426.
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}

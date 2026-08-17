@@ -1,0 +1,79 @@
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item DFS = disease-free survival; OS = overall survival; PD = progressed disease; PSM = partitioned survival model; HR = hazard ratio; CI = confidence interval; pp = percentage points; AdViSHE = Assessment of the Validation Status of Health-Economic decision models; BIC = Bayesian information criterion; PH = proportional hazards.
+\item Monotonicity: TRUE = state proportion never increases (DFS, OS) or never decreases (Dead) over time. 5-year DFS gaps within 1 percentage point, the tolerance adopted here for parametric extrapolation of reconstructed pseudo-IPD (Guyot et al., 2012).
+\item Source: PSM trace validation and HR reconstruction (R code, supplementary material); Courneya et al. (2025).
+\end{TableNotes}
+\begin{longtable}[t]{lr}
+\caption{\label{tab:table08}Internal Validation Summary. Panel A: PSM trace properties (state occupancy summation, monotonicity). Panel B: 5-year DFS endpoint reproduction, model versus published. Panel C: Pseudo-IPD hazard ratio reconstruction via Cox PH. Panel D: Parametric survival model fit by BIC.}\\
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Check}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Result}}}\\
+\midrule
+\endfirsthead
+\caption[]{Internal Validation Summary. \textit{(continued)}}\\
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Check}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Result}}}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\insertTableNotes
+\endlastfoot
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Panel A: PSM Trace Properties (AdViSHE C3)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}}\\
+\textcolor[HTML]{2D3748}{DFS monotonic (Standard Care)} & \textcolor[HTML]{2D3748}{TRUE}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS monotonic (Standard Care)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{TRUE}}\\
+\textcolor[HTML]{2D3748}{Dead monotonic (Standard Care)} & \textcolor[HTML]{2D3748}{TRUE}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS monotonic (Exercise)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{TRUE}}\\
+\textcolor[HTML]{2D3748}{OS monotonic (Exercise)} & \textcolor[HTML]{2D3748}{TRUE}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Dead monotonic (Exercise)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{TRUE}}\\
+\textcolor[HTML]{2D3748}{State sum range (should be \textasciitilde{}1)} & \textcolor[HTML]{2D3748}{{}[1, 1]}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Minimum PD proportion}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0}}\\
+\textcolor[HTML]{2D3748}{Panel B: 5-Year DFS Endpoint Reproduction (AdViSHE D4)} & \textcolor[HTML]{2D3748}{}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{5yr DFS Standard Care (model)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{73.1\%}}\\
+\textcolor[HTML]{2D3748}{5yr DFS Standard Care (published, Courneya 2025)} & \textcolor[HTML]{2D3748}{73.9\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Gap (percentage points)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{-0.8 pp}}\\
+\textcolor[HTML]{2D3748}{5yr DFS Exercise (model)} & \textcolor[HTML]{2D3748}{79.8\%}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{5yr DFS Exercise (published, Courneya 2025)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{80.3\%}}\\
+\textcolor[HTML]{2D3748}{Gap (percentage points)} & \textcolor[HTML]{2D3748}{-0.5 pp}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Panel C: Pseudo-IPD HR Reconstruction (AdViSHE D4)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{}}\\
+\textcolor[HTML]{2D3748}{DFS HR (published)} & \textcolor[HTML]{2D3748}{0.72}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS HR (reconstructed)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.6969}}\\
+\textcolor[HTML]{2D3748}{DFS 95\% CI} & \textcolor[HTML]{2D3748}{{}[0.5342, 0.909]}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS absolute difference}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.0231}}\\
+\textcolor[HTML]{2D3748}{DFS within +/-0.05} & \textcolor[HTML]{2D3748}{Yes}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS HR (published)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{0.63}}\\
+\textcolor[HTML]{2D3748}{OS HR (reconstructed)} & \textcolor[HTML]{2D3748}{0.5671}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS 95\% CI}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{{}[0.3787, 0.8494]}}\\
+\textcolor[HTML]{2D3748}{OS absolute difference} & \textcolor[HTML]{2D3748}{0.0629}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS within +/-0.05}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{No}}\\
+\textcolor[HTML]{2D3748}{Panel D: Survival Distribution Selection (AdViSHE B2)} & \textcolor[HTML]{2D3748}{}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS, Standard Care (PRIMARY): gengamma (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{993}}\\
+\textcolor[HTML]{2D3748}{DFS, Standard Care (PRIMARY): lnorm (BIC)} & \textcolor[HTML]{2D3748}{995}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS, Standard Care (PRIMARY): gompertz (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1,002}}\\
+\textcolor[HTML]{2D3748}{DFS, Standard Care (PRIMARY): llogis (BIC)} & \textcolor[HTML]{2D3748}{1,004}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS, Standard Care (PRIMARY): weibull (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{1,008}}\\
+\textcolor[HTML]{2D3748}{DFS, Standard Care (PRIMARY): exp (BIC)} & \textcolor[HTML]{2D3748}{1,027}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS, Standard Care (PRIMARY): lnorm (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{612}}\\
+\textcolor[HTML]{2D3748}{OS, Standard Care (PRIMARY): llogis (BIC)} & \textcolor[HTML]{2D3748}{616}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS, Standard Care (PRIMARY): gengamma (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{616}}\\
+\textcolor[HTML]{2D3748}{OS, Standard Care (PRIMARY): weibull (BIC)} & \textcolor[HTML]{2D3748}{617}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS, Standard Care (PRIMARY): gompertz (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{623}}\\
+\textcolor[HTML]{2D3748}{OS, Standard Care (PRIMARY): exp (BIC)} & \textcolor[HTML]{2D3748}{624}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS, Exercise (VALIDATION): gompertz (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{775}}\\
+\textcolor[HTML]{2D3748}{DFS, Exercise (VALIDATION): lnorm (BIC)} & \textcolor[HTML]{2D3748}{777}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS, Exercise (VALIDATION): gengamma (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{780}}\\
+\textcolor[HTML]{2D3748}{DFS, Exercise (VALIDATION): llogis (BIC)} & \textcolor[HTML]{2D3748}{785}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{DFS, Exercise (VALIDATION): weibull (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{788}}\\
+\textcolor[HTML]{2D3748}{DFS, Exercise (VALIDATION): exp (BIC)} & \textcolor[HTML]{2D3748}{807}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS, Exercise (VALIDATION): exp (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{418}}\\
+\textcolor[HTML]{2D3748}{OS, Exercise (VALIDATION): lnorm (BIC)} & \textcolor[HTML]{2D3748}{418}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS, Exercise (VALIDATION): llogis (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{419}}\\
+\textcolor[HTML]{2D3748}{OS, Exercise (VALIDATION): weibull (BIC)} & \textcolor[HTML]{2D3748}{419}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{OS, Exercise (VALIDATION): gompertz (BIC)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{421}}\\
+\textcolor[HTML]{2D3748}{OS, Exercise (VALIDATION): gengamma (BIC)} & \textcolor[HTML]{2D3748}{424}\\*
+\end{longtable}
+\end{ThreePartTable}
+\endgroup{}

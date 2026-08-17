@@ -1,0 +1,25 @@
+\begin{table}[H]
+\centering
+\caption{\label{tab:table24}Treatment Effect Waning Parameters. Base case: no waning (constant HR). Step waning at year 5; linear waning from year 3 to year 10 tested in structural SA.}
+\centering
+\fontsize{9}{11}\selectfont
+\makebox[\textwidth][c]{%
+\begin{threeparttable}
+\begin{tabular}[t]{llll}
+\toprule
+\cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Parameter}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Base case}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Scenario values}}} & \cellcolor[HTML]{1B2A4A}{\textcolor{white}{\textbf{Source}}}\\
+\midrule
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Waning type}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{None (constant HR)}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Step; Linear}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Taylor et al., 2024; Jennings et al., 2024}}\\
+\textcolor[HTML]{2D3748}{Step waning year} & \textcolor[HTML]{2D3748}{N/A} & \textcolor[HTML]{2D3748}{Year 5 (HR resets to 1.0)} & \textcolor[HTML]{2D3748}{Modelling assumption}\\
+\cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Linear waning start}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{N/A}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Year 3}} & \cellcolor[HTML]{F7F9FC}{\textcolor[HTML]{2D3748}{Modelling assumption}}\\
+\textcolor[HTML]{2D3748}{Linear waning end} & \textcolor[HTML]{2D3748}{N/A} & \textcolor[HTML]{2D3748}{Year 10 (HR reaches 1.0)} & \textcolor[HTML]{2D3748}{Modelling assumption}\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item HR = hazard ratio; SA = sensitivity analysis.
+\item Waning framework follows Taylor et al. (2024) 6-step approach. Step waning: HR instantaneously resets to 1.0. Linear waning: the log hazard ratio interpolates linearly from the treatment effect to 0, so the hazard ratio approaches 1.0 geometrically. Base case (no waning) maintains the trial hazard ratios over the lifetime horizon and may overestimate long-term benefit; the step- and linear-waning scenarios are cost-saving with reduced QALY gains (dominant; see Table~\ref{tab:table04}). CHALLENGE median follow-up: 7.9 years.
+\item Source: Taylor et al. (2024); Jennings et al. (2024).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}

@@ -1,0 +1,86 @@
+{
+  "thesis-table-01-deterministic.docx": {
+    "path": "output/tables/thesis-table-01-deterministic.docx",
+    "caption": "Supplementary deterministic results.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-02-psa-summary.docx": {
+    "path": "output/tables/thesis-table-02-psa-summary.docx",
+    "caption": "Probabilistic main-analysis results by strategy. NMB, INMB and P(cost-effective) evaluated at the applicable cost-effectiveness threshold of \\wtpThreshold{} NOK per QALY.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-03-convergence.docx": {
+    "path": "output/tables/thesis-table-03-convergence.docx",
+    "caption": "PA Convergence Diagnostics. Primary method: incremental net monetary benefit (INMB) confidence interval. The INMB 95% CI excluded zero from n=100 iterations onward. Secondary check: cumulative mean ICER difference exceeding the 1% stability threshold; the primary INMB criterion governs. Cost-effectiveness threshold: NOK 385,000/QALY. Extended healthcare perspective; 4% discount rate (Rundskriv R-109).",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-04-structural-sa.docx": {
+    "path": "output/tables/thesis-table-04-structural-sa.docx",
+    "caption": "Structural sensitivity analysis.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-05-powsa.docx": {
+    "path": "output/tables/thesis-table-05-powsa.docx",
+    "caption": "Probabilistic one-way sensitivity analysis. INMB and P(CE) evaluated at the applicable cost-effectiveness threshold of \\wtpThreshold{} NOK per QALY; costs in 2024 NOK.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-06-evpi.docx": {
+    "path": "output/tables/thesis-table-06-evpi.docx",
+    "caption": "Expected value of perfect information at selected cost-effectiveness thresholds. Panel A names its own threshold on every row; Panel B is evaluated at the applicable cost-effectiveness threshold of \\wtpThreshold{} NOK per QALY.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-07-evppi.docx": {
+    "path": "output/tables/thesis-table-07-evppi.docx",
+    "caption": "Expected value of partial perfect information by parameter. EVPPI and EVPI evaluated at the applicable cost-effectiveness threshold of \\wtpThreshold{} NOK per QALY.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-08-validation.docx": {
+    "path": "output/tables/thesis-table-08-validation.docx",
+    "caption": "Internal Validation Summary. Panel A: PSM trace properties (state occupancy summation, monotonicity). Panel B: 5-year DFS endpoint reproduction, model versus published. Panel C: Pseudo-IPD hazard ratio reconstruction via Cox PH. Panel D: Parametric survival model fit by BIC.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-10-subgroup-sa.docx": {
+    "path": "output/tables/thesis-table-10-subgroup-sa.docx",
+    "caption": "Subgroup sensitivity analysis.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-11-internal-validation.docx": {
+    "path": "output/tables/thesis-table-11-internal-validation.docx",
+    "caption": "Internal validation of PSM trace across 2 arms (Standard Care and Exercise): per-cycle verdicts.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-12-quadrant-analysis.docx": {
+    "path": "output/tables/thesis-table-12-quadrant-analysis.docx",
+    "caption": "Cost-effectiveness plane quadrant analysis.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-13-disaggregated.docx": {
+    "path": "output/tables/thesis-table-13-disaggregated.docx",
+    "caption": "Disaggregated outcomes by health state.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-14-perspective.docx": {
+    "path": "output/tables/thesis-table-14-perspective.docx",
+    "caption": "Perspective scenario analysis (deterministic base case).",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  },
+  "thesis-table-30-psa-specification-sensitivity.docx": {
+    "path": "output/tables/thesis-table-30-psa-specification-sensitivity.docx",
+    "caption": "PA specification sensitivity (one reference plus five sensitivity specifications; separate from the 25 deterministic structural scenarios). Panel A reports decision and value-of-information results; Panel B reports incremental-outcome moments, correlation, and convergence. P(CE), EVPI and Joint-HR EVPPI evaluated at the applicable cost-effectiveness threshold of \\wtpThreshold{} NOK per QALY.",
+    "git_commit": "932010577d31cf57533809a00d2288056bfd2fd6",
+    "cheers_compliant": true
+  }
+}
