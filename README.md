@@ -135,7 +135,7 @@ That CSV ships with the repository because `R/09-export-latex-commands.R` reads 
 
 This code accompanies the master's thesis: Álcega Hartmann, A. (2026). *Cost-Utility and Value of Information Analysis of Structured Exercise After Adjuvant Chemotherapy for Colon Cancer: A Partitioned Survival Model from the Norwegian Extended Healthcare Perspective.* European Master in Health Economics and Management (Eu-HEM), University of Oslo, Erasmus University Rotterdam and University of Bologna. Oslo, August 2026.
 
-Please cite the thesis when using this model or its code. The code itself is archived on Zenodo: DOI 10.5281/zenodo.21978175 refers to all versions and always resolves to the newest one, which is the DOI to cite. Each release also carries its own version DOI (v1.0.0 is 10.5281/zenodo.21978176, v1.0.1 is 10.5281/zenodo.21978187).
+Please cite the thesis when using this model or its code. The code itself is archived on Zenodo: DOI 10.5281/zenodo.21978175 refers to all versions and always resolves to the newest one, which is the DOI to cite.
 
 ## License
 

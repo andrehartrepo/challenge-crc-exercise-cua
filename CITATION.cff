@@ -1,22 +1,16 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite both the thesis and this repository."
-title: "R code for a cost-utility analysis of a structured exercise programme in colon cancer (CHALLENGE trial)"
+title: "R code for: Cost-Utility and Value of Information Analysis of Structured Exercise After Adjuvant Chemotherapy for Colon Cancer: A Partitioned Survival Model from the Norwegian Extended Healthcare Perspective"
 authors:
   - family-names: "Álcega Hartmann"
     given-names: "André"
-version: 1.0.1
+version: 1.0.2
 date-released: "2026-08-17"
 url: "https://github.com/andrehartrepo/challenge-crc-exercise-cua"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.21978175"
-    description: "Concept DOI for all versions"
-  - type: doi
-    value: "10.5281/zenodo.21978176"
-    description: "DOI of version v1.0.0"
-  - type: doi
-    value: "10.5281/zenodo.21978187"
-    description: "DOI of version v1.0.1"
+    description: "Concept DOI for all versions; always resolves to the newest version"
 license:
   - MIT
   - CC-BY-4.0
